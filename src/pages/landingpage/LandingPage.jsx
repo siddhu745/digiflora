@@ -188,9 +188,9 @@ function LandingPage() {
       </div>
 
       {/* plant gallery */}
-      <div id="plantGallery" className="text-gray-700 py-10">
+      <div id="plantGallery" className="text-gray-700 py-10 pt-20">
         <div className={mainHeadingCss}>
-          Discover Andhra Pradesh’s Botanical Treasures
+          Discover <span className="text-teal-500">Andhra Pradesh’s</span> Botanical Treasures
         </div>
         <PlantGallery />
       </div>
