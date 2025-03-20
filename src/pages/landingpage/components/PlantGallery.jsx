@@ -98,7 +98,7 @@ function PlantGallery() {
         {rarePlants.map((plant, index) => (
           <div
             key={index}
-            className="relative overflow-hidden rounded-sm group opacity-0 translate-y-10 transition-all duration-700 ease-in-out fade-in"
+            className="relative w-56 overflow-hidden rounded-sm group opacity-0 translate-y-10 transition-all duration-700 ease-in-out fade-in"
             style={{ animationDelay: `${index * 100}ms` }}
           >
             <img

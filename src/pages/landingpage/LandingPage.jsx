@@ -128,8 +128,8 @@ function LandingPage() {
       {/* hero section */}
       <div id="sparkDiv" className="h-80 content-center text-gray-700">
         <div className=" text-5xl font-bold flex gap-2 justify-center items-end">
-          <BsStars className="text-7xl mb-5 text-pink-500" />
-          Unlock Secrets of <span className="text-pink-500"> 3000+ </span>{" "}
+          <BsStars className="text-7xl mb-5 text-teal-500" />
+          Unlock Secrets of <span className="text-teal-500"> 3000+ </span>{" "}
           Plants!
         </div>
         <div className="text-2xl text-center m-3">
@@ -137,7 +137,7 @@ function LandingPage() {
           one place.
         </div>
         <div className="flex justify-center">
-          <div className="cursor-pointer m-3 text-xl flex gap-3 items-center border border-pink-500 w-fit p-1 px-3 rounded-full bg-pink-500 text-white">
+          <div className="cursor-pointer m-3 text-xl flex gap-3 items-center border border-teal-500 w-fit p-1 px-3 rounded-full bg-teal-500 text-white">
             Explore More <HiMiniArrowRightCircle />
           </div>
         </div>
@@ -147,7 +147,7 @@ function LandingPage() {
             position: absolute;
             width: 15px;
             height: 15px;
-            background: hotpink;
+            background: teal;
             border-radius: 50%;
             opacity: 1;
             animation: spark-fade 0.5s forwards ease-out;
@@ -169,15 +169,15 @@ function LandingPage() {
       </div>
 
       {/* features section */}
-      <div className="bg-pink-200   text-gray-700 py-10">
+      <div className="bg-slate-50   text-gray-700 py-10">
         <div className={mainHeadingCss}>Why Our Plant Database Stands Out</div>
         <div className="flex flex-wrap justify-center gap-4 m-3">
           {features.map((feature, index) => (
             <div
               key={index}
-              className="bg-white w-72 p-4 rounded-md hover:shadow-md"
+              className="bg-white w-72 p-4 rounded-md shadow-md"
             >
-              <div className="p-2 bg-pink-100 text-pink-500 w-fit rounded-md text-2xl">
+              <div className="p-2 bg-teal-100 text-teal-500 w-fit rounded-md text-2xl">
                 {feature.icon}
               </div>
               <div className="font-semibold text-lg my-2">{feature.title}</div>
@@ -187,8 +187,16 @@ function LandingPage() {
         </div>
       </div>
 
+      {/* plant gallery */}
+      <div id="plantGallery" className="text-gray-700 py-10">
+        <div className={mainHeadingCss}>
+          Discover Andhra Pradesh’s Botanical Treasures
+        </div>
+        <PlantGallery />
+      </div>
+
       {/* testimonials */}
-      <div className="text-gray-700 py-10">
+      <div className="text-gray-700 py-10 my-10">
         <div className={mainHeadingCss}>What Our Plant Enthusiasts Say</div>
         <div className="overflow-hidden">
           <div className="w-fit mb-4">
@@ -196,7 +204,7 @@ function LandingPage() {
               {[...cards, ...cards].map((card, index) => (
                 <div
                   key={`left-${index}`}
-                  className="w-80 bg-pink-200 rounded-sm  text-center p-2 py-4"
+                  className="w-80 bg-slate-50 rounded-sm  text-center p-2 py-4"
                 >
                   {card.text} - <b>{card.author}</b>
                 </div>
@@ -206,7 +214,7 @@ function LandingPage() {
               {[...cards, ...cards].map((card, index) => (
                 <div
                   key={`right-${index}`}
-                  className="w-80 bg-pink-200 rounded-sm  text-center p-2 py-4"
+                  className="w-80 bg-slate-100 rounded-sm  text-center p-2 py-4"
                 >
                   {card.text} - <b>{card.author}</b>
                 </div>
@@ -237,14 +245,6 @@ function LandingPage() {
         </style>
       </div>
 
-      {/* plant gallery */}
-      <div id="plantGallery" className="text-gray-700 py-10">
-        <div className={mainHeadingCss}>
-          Discover Andhra Pradesh’s Botanical Treasures
-        </div>
-        <PlantGallery />
-      </div>
-
       {/* Pricing section */}
       <div id="pricing" className="text-gray-700 py-10">
         <div className={mainHeadingCss}>Unlock the Green Library</div>
@@ -253,7 +253,7 @@ function LandingPage() {
             <div className="text-center font-semibold text-xl my-2">
               Free Plan
             </div>
-            <div className="text-5xl text-pink-500  flex justify-center">
+            <div className="text-5xl text-teal-500  flex justify-center">
               <BiRupee className="mt-1" />0
             </div>
             <div className="text-sm m-2 text-center">life time</div>
@@ -263,7 +263,7 @@ function LandingPage() {
             <div className="flex justify-center">
               <div className="w-44">
                 <div className="flex items-center gap-2">
-                  <FaCheckCircle className="text-pink-500" /> Basic plant list
+                  <FaCheckCircle className="text-teal-500" /> Basic plant list
                 </div>
               </div>
             </div>
@@ -272,7 +272,7 @@ function LandingPage() {
             <div className="text-center font-semibold text-xl my-2">
               Standard Plan
             </div>
-            <div className="text-5xl text-pink-500  flex justify-center">
+            <div className="text-5xl text-teal-500  flex justify-center">
               <BiRupee className="mt-1" />
               100
             </div>
@@ -284,16 +284,16 @@ function LandingPage() {
             <div className="flex justify-center">
               <div className="w-44">
                 <div className="flex items-center gap-2">
-                  <FaCheckCircle className="text-pink-500" /> Basic plant list
+                  <FaCheckCircle className="text-teal-500" /> Basic plant list
                 </div>
                 <div className="flex items-center gap-2">
-                  <FaCheckCircle className="text-pink-500" />
+                  <FaCheckCircle className="text-teal-500" />
                   Full details
                 </div>
                 <div className="flex items-center gap-2">
-                  <FaCheckCircle className="text-pink-500" /> Growing guides
+                  <FaCheckCircle className="text-teal-500" /> Growing guides
                 </div>
-                <div className="bg-pink-500 text-white text-center my-3 p-1 rounded-sm cursor-pointer">
+                <div className="bg-teal-500 text-white text-center my-3 p-1 rounded-sm cursor-pointer">
                   Checkout
                 </div>
               </div>
@@ -303,7 +303,7 @@ function LandingPage() {
             <div className="text-center font-semibold text-xl my-2">
               Pro Plan
             </div>
-            <div className="text-5xl text-pink-500  flex justify-center">
+            <div className="text-5xl text-teal-500  flex justify-center">
               <BiRupee className="mt-1" />
               700
             </div>
@@ -315,23 +315,23 @@ function LandingPage() {
             <div className="flex justify-center">
               <div className="w-44">
                 <div className="flex items-center gap-2">
-                  <FaCheckCircle className="text-pink-500" /> Basic plant list
+                  <FaCheckCircle className="text-teal-500" /> Basic plant list
                 </div>
                 <div className="flex items-center gap-2">
-                  <FaCheckCircle className="text-pink-500" />
+                  <FaCheckCircle className="text-teal-500" />
                   Full details
                 </div>
                 <div className="flex items-center gap-2">
-                  <FaCheckCircle className="text-pink-500" /> Growing guides
+                  <FaCheckCircle className="text-teal-500" /> Growing guides
                 </div>
                 <div className="flex items-center gap-2">
-                  <FaCheckCircle className="text-pink-500" /> Exclusive rare
+                  <FaCheckCircle className="text-teal-500" /> Exclusive rare
                   plants
                 </div>
                 <div className="flex items-center gap-2">
-                  <FaCheckCircle className="text-pink-500" /> Updates
+                  <FaCheckCircle className="text-teal-500" /> Updates
                 </div>
-                <div className="bg-pink-500 text-white text-center my-3 p-1 rounded-sm cursor-pointer">
+                <div className="bg-teal-500 text-white text-center my-3 p-1 rounded-sm cursor-pointer">
                   Checkout
                 </div>
               </div>
@@ -353,7 +353,7 @@ function LandingPage() {
         </div>
       </div>
 
-      <footer id="footer" className="bg-pink-200 text-gray-700 p-6">
+      <footer id="footer" className="bg-slate-100 text-gray-700 p-6 py-20">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
           <div>
             <h3 className="text-lg font-bold mb-2">About Us</h3>
@@ -407,9 +407,9 @@ function LandingPage() {
           </div>
         </div>
 
-        <div className="text-center text-gray-500 text-sm mt-6 border-t pt-4">
-          © 2025 DigiFlora By APFD. All rights reserved. <br /> Designed &
-          Developed By APCFSS
+        <div className="text-center text-gray-500 text-sm mt-6 border-t border-t-white pt-4">
+          Designed & Developed By APCFSS
+          <br />© 2025 DigiFlora By APFD. All rights reserved.
         </div>
       </footer>
     </div>
