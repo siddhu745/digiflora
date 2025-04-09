@@ -127,12 +127,12 @@ function LandingPage() {
 
       {/* hero section */}
       <div id="sparkDiv" className="h-80 content-center text-gray-700">
-        <div className=" text-5xl font-bold flex gap-2 justify-center items-end">
-          <BsStars className="text-7xl mb-5 text-teal-500" />
+        <div className="text-3xl md:text-5xl font-bold  md:flex gap-2 justify-center items-end text-center">
+          <BsStars className="md:text-7xl mb-5 text-teal-500" />
           Unlock Secrets of <span className="text-teal-500"> 3000+ </span>{" "}
           Plants!
         </div>
-        <div className="text-2xl text-center m-3">
+        <div className="md:text-2xl text-center m-3">
           From care tips to medicinal uses — get all the insights you need in
           one place.
         </div>
